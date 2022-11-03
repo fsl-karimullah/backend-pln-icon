@@ -11,8 +11,8 @@ const ItemModel = mongoose.Schema({
     unique: true,
   },
   itemType: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "itemType",
   },
   date: {
     type: Date,

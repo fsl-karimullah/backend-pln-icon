@@ -54,6 +54,15 @@
   dependencies:
     path-to-regexp "^6.2.0"
 
+"@adminjs/mongoose@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@adminjs/mongoose/-/mongoose-3.0.1.tgz#50a68cd430e6322cd28a6ed2b8719a453bbb69ec"
+  integrity sha512-HX30VuHhE3KH2xL/E9XPe6ohExjfy9GecIMmP7OygUt1dRBJY2u/hRzZ09bf8HsOCRrR5yA8AbuxPBi1hGiQ1A==
+  dependencies:
+    escape-regexp "0.0.1"
+    flat "^4.1.0"
+    lodash "^4.17.21"
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
@@ -2471,6 +2480,11 @@ escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
+
+escape-regexp@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/escape-regexp/-/escape-regexp-0.0.1.tgz#f44bda12d45bbdf9cb7f862ee7e4827b3dd32254"
+  integrity sha512-jVgdsYRa7RKxTT6MKNC3gdT+BF0Gfhpel19+HMRZJC2L0PufB0XOBuXBoXj29NKHwuktnAXd1Z1lyiH/8vOTpw==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
