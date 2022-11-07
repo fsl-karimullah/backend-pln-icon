@@ -9,7 +9,8 @@ const User = require("./models/User");
 const Items = require("./models/Items");
 const ItemType = require("./models/ItemType");
 const Partner = require("./models/Partner");
-// connectDB();
+const importExportFeature = require("@adminjs/import-export");
+
 app.use(express.json());
 const PORT = process.env.PORT || 5000;
 
@@ -31,9 +32,7 @@ AdminJS.registerAdapter({
 //funtion to start app
 const start = async () => {
   const app = express();
-  const db = await mongoose.connect(
-    "mongodb://localhost:27017/pln-iconplus-databases"
-  );
+  connectDB();
 
   const usersNavigation = {
     name: "Users",
@@ -41,18 +40,23 @@ const start = async () => {
   };
   const itemsNavigation = {
     name: "Items",
-    icon: "Items",
+    icon: "Box",
   };
   const itemTypeNavigation = {
     name: "Item Type",
-    icon: "Type",
+    icon: "Document",
   };
   const PartnerNavigation = {
     name: "Partner",
-    icon: "Partner",
+    icon: "Person",
   };
 
   const admin = new AdminJS({
+    branding: {
+      logo: "https://s.kaskus.id/r540x540/images/2021/04/09/10990975_20210409102827.png",
+      companyName: "Icon+ Warehouse System",
+      softwareBrothers: false, // if Software Brothers logos should be shown in the sidebar footer
+    },
     resources: [
       {
         resource: User,
