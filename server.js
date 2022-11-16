@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const connectDB = require("./config/db");
-const mongoose = require("mongoose");
 const AdminJSMongoose = require("@adminjs/mongoose");
 const AdminJS = require("adminjs");
 const AdminJSExpress = require("@adminjs/express");
